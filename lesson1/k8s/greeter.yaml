@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: greeter
+  labels:
+    plan: dev
+spec:
+  containers:
+  - name: greeter
+    image: hanfa/greeter:v1.0.0
+    resources:
+      limits:
+        memory: "128Mi"
+        cpu: "500m"
