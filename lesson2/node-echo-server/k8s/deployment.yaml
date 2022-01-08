@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: node-echo-server
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: node-echo-server
+  template:
+    metadata:
+      labels:
+        app: node-echo-server
+    spec:
+      containers:
+      - name: node-echo-server
+        env:
+        - name: NODE_NAME
+          valueFrom:
+            fieldRef:
+              fieldPath: spec.nodeName
+        image: node-echo-server:1.0
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+        ports:
+        - containerPort: 80
+
+
