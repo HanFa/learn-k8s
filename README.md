@@ -6,5 +6,5 @@
 | Topics                    | Source Code    | Video Link                                    |
 |------------------------	|-------------	|----------------------------------------------	|
 | 环境搭建 & 命令行安装            |      [lesson1](./lesson1)       	| https://www.bilibili.com/video/BV1Xq4y1G7cF  |
-| K8s Deployments & Services            |      [lesson2](./lesson2)       	|    |
+| K8s Deployments & Services            |      [lesson2](./lesson2)       	|  https://www.bilibili.com/video/BV1qP4y1E7nD/  |
 
